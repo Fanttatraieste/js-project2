@@ -1,0 +1,112 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    text-align: center;
+    background: url("./img/project1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#add-task-container {
+    width:350px;
+    padding:20px 10px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 3px;
+
+    display:flex;
+}
+
+input {
+    flex: 5;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding:5px;
+}
+
+#add-task {
+    margin-left:15px;
+    background-color: transparent;
+    border:none;
+    color:olive;
+    transition: 300ms;
+}
+
+#add-task:hover {
+    color:green;
+    transition: 300ms;
+    cursor:pointer;
+}
+
+.fa-plus{
+    width:20px;
+    height:20px;
+    
+    fill: currentColor;
+}
+
+
+/*  Task style  */
+.task {
+    width:100%;
+    background-color: white;
+    border-radius:10px;
+    box-shadow:0 0 3px;
+    padding:5px;
+    margin-top:20px;
+    margin-bottom:5px; 
+
+    display:flex;
+    justify-content: space-between;
+}
+
+.task li {
+    list-style: none;
+    flex:4;
+    padding:5px;
+    font-size:1.3rem;
+    margin:10px;
+}
+
+.fa-tick,
+.fa-bin {
+    width:20px;
+    height:20px;
+    fill:currentColor;
+}
+
+.checkTask {
+    margin-right:10px;
+    background-color: transparent;
+    border:none;
+    color:#F4EFE1;
+    transition:300ms;
+}
+.checkTask:hover {
+    color:green;
+    transition: 300ms;
+    cursor:pointer;
+}
+
+.deleteTask {
+    background-color: transparent;
+    border:none;
+    color: #F4EFE1;;
+    transition:300ms;
+}
+
+.deleteTask:hover{
+    color:#262626;
+    transition: 300ms;
+    cursor:pointer;
+}

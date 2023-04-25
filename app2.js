@@ -66,7 +66,7 @@ addTask.addEventListener('click', () => {
             {
             target.parentElement.parentElement.remove();
         }
-        if (target.nodeName === "USE")
+        if (target.nodeName === "use")
             {
             target.parentElement.parentElement.parentElement.remove();
         }
